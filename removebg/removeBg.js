@@ -12,7 +12,8 @@ const createRemoveBgCommand = (cliOptions) => {
     .description(cliOptions.commands.removebg.description)
     .requiredOption(cliOptions.commands.removebg.options.output.flags, cliOptions.commands.removebg.options.output.description)
     .option(cliOptions.commands.removebg.options.input.flags, cliOptions.commands.removebg.options.input.description)
-    .option(cliOptions.commands.removebg.options.backgroundColor.flags, cliOptions.commands.removebg.options.backgroundColor.description)  
+    .option(cliOptions.commands.removebg.options.backgroundColor.flags, cliOptions.commands.removebg.options.backgroundColor.description) 
+    .option(cliOptions.commands.removebg.options.apikey.flags, cliOptions.commands.removebg.options.apikey.description) 
     .action(async (options) => {
       const { input, output, apikey, bgColor } = options;
       const apiKey = apikey || loadApiKey();

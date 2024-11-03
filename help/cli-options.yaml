@@ -18,6 +18,9 @@ commands:
       backgroundColor: 
         flags: '-c, --bg-color <color>'
         description: 'Specify background color (hex code or color name)'
+      apikey: 
+        flags: '-k, --apikey <apikey>'
+        description: 'Picsart API key for authentication'
   upscale:
     description: 'Upscale an image to higher resolution'
     options:
@@ -30,6 +33,9 @@ commands:
       zoom: 
         flags: '-z, --zoom <times>'
         description: 'Scale zoom size (e.g., 2x)'
+      apikey: 
+        flags: '-k, --apikey <apikey>'
+        description: 'Picsart API key for authentication'
   save:
     description: 'Save your Picsart API key for future use'
     options:

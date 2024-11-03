@@ -14,6 +14,7 @@ const createUpscaleCommand = (cliOptions, loadApiKey) => {
     .requiredOption(cliOptions.commands.upscale.options.output.flags, cliOptions.commands.upscale.options.output.description)
     .requiredOption(cliOptions.commands.upscale.options.zoom.flags, cliOptions.commands.upscale.options.zoom.description)
     .option(cliOptions.commands.upscale.options.input.flags, cliOptions.commands.upscale.options.input.description)
+    .option(cliOptions.commands.upscale.options.apikey.flags, cliOptions.commands.upscale.options.apikey.description)
     .action(async (options) => {
       const { input, output, zoom, apikey } = options;
       const apiKey = apikey || loadApiKey();
