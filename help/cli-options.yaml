@@ -1,5 +1,5 @@
 description: 'CLI tool to remove background and upscale images using Picsart API'
-version: '1.0.0'
+version: '1.0.1'
 
 helpOption:
   flags: '-h, --help'
